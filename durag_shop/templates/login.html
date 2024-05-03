@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login</title>
+    </head>
+    <body>
+        {% if message %}
+            {% for message in messages %}
+            <p>{{message}}</p>
+            {% endfor %}
+        {% endif%}
+        <form method="post">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button type="submit">login</button>
+        </form>
+    </body>
+</html>
