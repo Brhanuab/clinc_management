@@ -1,1 +1,1 @@
-# clinc_management
+# clinic_management
